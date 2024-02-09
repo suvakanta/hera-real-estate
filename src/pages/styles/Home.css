@@ -1,0 +1,45 @@
+.main {
+    display: grid;
+    min-height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    margin-left: 30px;
+    /* background-image: url("https://i.postimg.cc/6QvHKDsh/view-of-modern-business-skyscrapers-glass-and-sky-view-landscape-of-commercial-building-in-central-c.png"); */
+}
+
+.home-div{
+    position: relative;
+   
+}
+
+.home-div::before {
+    content: "";
+    background-image: url("https://i.postimg.cc/6QvHKDsh/view-of-modern-business-skyscrapers-glass-and-sky-view-landscape-of-commercial-building-in-central-c.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    background-color: #253B44;
+}
+
+img {
+    /* height: 10rem; */
+}
+
+h1 {
+    color:#253B44;
+}
+
+.homeP {
+    grid-row: 2/span1;
+    grid-column: 1/3;
+    z-index: 1;
+}
+
+h1{
+    grid-column: 1/span3;
+}
+
